@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.taskmanager.databinding.ItemTaskBinding
 import com.google.android.gms.tasks.Task
 
 class TaskAdapter(
@@ -15,7 +16,8 @@ class TaskAdapter(
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TaskViewHolder {
-        return TaskViewHolder(ItemTaskBinding.inflate(
+        return TaskViewHolder(
+            ItemTaskBinding.inflate(
             LayoutInflater.from(parent.context),
             parent,
             false))
