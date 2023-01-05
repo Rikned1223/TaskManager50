@@ -15,7 +15,7 @@ class HomeFragment : Fragment() {
     private lateinit var adapter: TaskAdapter
     private val binding get() = _binding!!
     private lateinit var data : List<Task>
-
+/
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         adapter = TaskAdapter(this::onLongClick,this::onCLick)
